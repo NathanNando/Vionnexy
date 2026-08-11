@@ -1,0 +1,51 @@
+:root {
+    --Roxo-escuro: #3B0A6D--;
+    --Roxo-principal: #6F1DCE--;
+    --Roxo-brilhante: #A238FF--;
+    --Lilás-neon: #D47CFF--;
+}
+
+body {
+    background-color: black;
+}
+
+.areaDeTopo {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.areaDeTopo a {
+    text-decoration: none;
+    color: white;
+}
+
+.imagens {
+    width: 100%;
+    max-width: 100%;
+    height: 420px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.ativo {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 10px;
+    border-radius: 5%;
+}
